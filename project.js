@@ -16,4 +16,4 @@ const deposit = () => {     //this is the same as                 function depos
 
 };
 
-deposit();
+deposit(); 
