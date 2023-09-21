@@ -12,7 +12,7 @@ const prompt = require("prompt-sync")();  // calls package prpmt-sync
 const deposit = () => {     //this is the same as                 function deposit() {    }
 
     const depositAmount = prompt("Enter a deposit amount: ");
-
+    const numberDepositAmount = parseFloat(depositAmount);
 
 };
 
