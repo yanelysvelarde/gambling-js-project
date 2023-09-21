@@ -1,3 +1,4 @@
+//Learning JS #1
 // 1. desposit some money
 // 2. determine number of lines to bet
 // 3. collect a bet amount
@@ -34,16 +35,7 @@ const SYMBOL_VALUES = {
 
 
 
-
-
-
-
-
-
-
-
-
-//create a function/cosntant
+//create a function/constant
 const deposit = () => {     //this is the same as                 function deposit() {    }
     while(true){
     const depositAmount = prompt("Enter a deposit amount: ");
