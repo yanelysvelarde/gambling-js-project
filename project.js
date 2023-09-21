@@ -10,10 +10,18 @@ const prompt = require("prompt-sync")();  // calls package prpmt-sync
 
 //create a function/cosntant
 const deposit = () => {     //this is the same as                 function deposit() {    }
-
+    while(true){
     const depositAmount = prompt("Enter a deposit amount: ");
-    const numberDepositAmount = parseFloat(depositAmount);
+    const numberDepositAmount = parseFloat(depositAmount);   //parseFloat converts string to number
 
+    if (isNaN(numberDepositAmount) || numberDepositAmount<= 0 ){
+        console.log("Invalid deposit amount, try again. ")
+    }     //NaN is "not a number"
+    else {
+        return numberDepositAmount;
+    }
+}
 };
 
-deposit(); 
+const depositAmount= deposit(); 
+console.log(depositAmount);
