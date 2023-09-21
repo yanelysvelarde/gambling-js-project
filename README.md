@@ -25,10 +25,28 @@ const deposit = () => {     //this is the same as                 function depos
     }     //NaN is "not a number"
     else {
         return numberDepositAmount;
+
     }
 }
 };
 
 const depositAmount= deposit(); 
+```
+## Step 2
+```
+
+const getNumberOfLines = () => {
+    while(true){
+        const lines = prompt("Enter the numbers of lines to bet on (1-3): ");
+        const numberOfLines = parseFloat(lines);   
+    
+        if (isNaN(numberOfLines) || numberOfLines<= 0 || numberOfLines > 3){
+            console.log("Invalid deposit amount, try again. ")
+        }     
+        else {
+            return numberOfLines;
+        }
+    }
+}
 
  
